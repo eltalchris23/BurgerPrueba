@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.mx.test.bean.DatosBean"  schema="fotos" table="datos">
+
+        <id name="id" type="java.lang.Long">
+             <column name="id" />
+        </id>
+        
+        <property column="reporte" name="reporte" type="java.lang.String"/>
+        <property column="ruta" name="ruta" type="java.lang.String"/>
+        <property column="fecha_generacion" name="fecha_generacion" type="java.util.Date"/>
+        <property column="usuario_modifico" name="usuario_modifico" type="java.lang.String"></property>
+     </class>
+</hibernate-mapping>
